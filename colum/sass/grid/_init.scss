@@ -1,4 +1,5 @@
-@import "variables.scss";
+@import "./variables";
+@import "./mixin"
 
 
 
@@ -11,8 +12,8 @@
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: - $grid-gap-side
-    margin-right - $grid-gap-side;
+    margin-left: -$grid-gap-side
+    margin-right -$grid-gap-side;
 
     > * {
         margin-left: $grid-gap-side;
@@ -21,18 +22,15 @@
 }
 
 .col{
-    flex: 1 0 0%;
-    
+    flex: 1 0 0%; 
 }
 
-@mixin col($size) {
-    flex: 0 0 auto;
-    width: calc(#{percentage($size / $grid-columns)} - #{$grid-gap});
-}
-@for $i from 1 through $grid-columns {
-    .col-#{$i} {
-      @include col($size);
+@each $br, $width in $grid-breakpoints{
+    @include media($width){
+       @for $i from 1 through $grid-columns {
+    .col-#{$br}-#{$i} {
+      @include col($i);
     }
- } 
-
-
+   }  
+  }
+}

@@ -15,7 +15,12 @@ html, body{
     height: 100%;
     padding: 20px;
     text-align: center;
-    background-color: brown;
+    background-color: gray;
 }
-
-
+.hero{
+    margin-bottom: $grid-gap;
+    margin-top: $grid-gap;
+}
+.page{
+    margin-bottom: $grid-gap;
+}

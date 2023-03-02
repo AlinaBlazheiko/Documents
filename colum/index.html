@@ -4,59 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="./css/main.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>colum</title>
 </head>
 <body>
-    <header>
+    <main class="main">
+        
+        <header class="header">
         <div class="container ">
-            
             <div class="row ">
-                <div class="col-md-2 block">
-                    logo
+                <div class="col-md-2 block"> 
+                    <div class="logo header__logo"><a href="#">ALIPRESS
+                        <br>
+                        <div>CARGO</div>
+                    </a></div>
                 </div>
-                <div class="col-md-10 block">
-                    button
+                <div class="col-md-10 header__buttons">
+                    <div class="button button_border" >
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="button button_primary">
+                        <a href="#">Join us</a>
+                    </div>
                 </div>
-           
+
         </div>
         </div>
     </header>
     <div class="container">
         <div class="hero">
         <div class="row">
-            <div class="col-sm-12 col-md-6 block">block</div>
-            <div class="col-sm-12 col-md-6 block">block</div>
+            <div class="col-sm-12 col-md-6"> <h1 class="title hero__title">Ship your package anywhere. Simple, easy and fast.</h1></div>
+            <div class="col-sm-12 col-md-6 block">
+                <div class="card hero__card">
+                     <h2 class="hero__desc">Where do you want to send</h2>
+                     <div class="row card__row" >
+                        <div class="col-sm-12 col-md-6">
+                            <p class="desc card__desc">Pick up address</p>
+                            <br>
+                            <div class="inputwithPic">
+                                <button class="inputwithPic__pic"> <img class="pic" src="/img/flight_takeoff_black_24dp.svg" alt="flight_takeoff"></button>
+                               <input class="inputwithPic__text" type="text" placeholder="Search...">
+                            </div>
+                         </div>
+                        <div class=" col-sm-12 col-md-6 block">
+                            <p class="desc card__desc">Delivery address</p>
+                            <br>
+                            <div class="inputwithPic">
+                                <button class="inputwithPic__pic"> <img class="pic" src="/img/flight_land_black_24dp 1 (1).svg" alt="flight_land_black"></button>
+                               <input class="inputwithPic__text" type="text" placeholder="Search...">
+                            </div>
+                         </div> </div>
+                         <div class="row card__row" >
+                            <div class="  col-sm-12 col-md-6  block">
+                                <p class="desc card__desc">Parcel details</p>
+                                <br>
+                                <div class="inputwithPic">
+                                    <button class="inputwithPic__pic"> <img class="pic" src="/img/inventory_2_black_24dp 1 (1).svg" alt="inventory"></button>
+                                   <input class="inputwithPic__text" type="text" placeholder="...">
+                                </div>
+                             </div>
+                            <div class=" col-sm-12 col-md-6 block">
+                                <p class="desc card__desc">Ship date</p>
+                                <br>
+                                <div class="inputwithPic">
+                                    <button class="inputwithPic__pic"> <img class="pic" src="/img/event_black_24dp 1 (1).svg" alt="event_black"></button>
+                                   <input class="inputwithPic__text" type="date" placeholder="...">
+                                </div>
+                             </div> </div>
+                             <div class="row  row__button" >
+                             <div class="button card__button button_primary" >
+                                <a href="#">Search</a>
+                            </div>
+                            </div>
+                            
+                    </div>
+
+                
+            </div>
         </div>
      </div>
         <div class="page">
+            <h2 class="caption">How to send a 
+                <br>
+                <span class="caption__oposit"> package with </span> Alirok</h2>
             <div class="section row" >
                <div class="  col-sm-12 col-md-6  block">
-                   blok
-                </div>
-               <div class=" col-sm-12 col-md-6 block">
-                   text
+                   <div class="circle circle_yellow"><img class="circle-img" src="img/Ellipse 5.jpg" alt="picture1"></div>
+                </div>  
+               <div class=" col-sm-12 col-md-6 ">
+                   <div class="btn ">
+                     <img class="btn__icon" src="/img/shopping-bag (1).svg" alt="shopping-bag"><div class="desc desc_orang">1 Quote</div>
+                   </div>
+                   <div class="title page__title">
+                     <p>Enter your origin, destination & package details</p>
+                   </div>
+                   <div class="subtitle-img">
+                      <img class="img-vector" src="/img/Vector (3).svg" alt="Vector"><p class="subtitle"> Review the rates & services and pick your preferred carrier</p>
+                   </div>
                 </div> </div>
-                <div class="section row" >
-                <div class=" col-sm-12 col-md-6 block">
-                   blok
+                <div class="section row row__revers" >
+                <div class=" col-sm-12 col-md-6 ">
+                    <div class="circle circle_pink"><img class="circle-img" src="img/Ellipse 5 (1).jpg" alt="picture2"></div>
                 </div>
                <div class="col-sm-12 col-md-6 block">
-                   text
-                </div> </div>
+                <div class="btn ">
+                    <img class="btn__icon btn__icon_pink" src="/img/rocket.svg" alt="shopping-bag"><div class="desc desc_orang">Book</div>
+                  </div>
+                  <div class="title page__title">
+                    <p>Add sender & recipient Information</p>
+                  </div>
+                  <div class="subtitle-img">
+                     <img class="img-vector" src="/img/Vector (3).svg" alt="Vector"><p class="subtitle"> Enter once & done, we will keep you posted about the status of your package</p>
+                  </div>
+               </div>
+                </div>
                 <div class="section row" >
                 <div class="col-sm-12 col-md-6  block">
-                   blok
+                    <div class="circle circle_green"><img class="circle-img" src="img/Ellipse 5 (2).jpg" alt="picture3"></div>
                 </div>
                <div class="col-sm-12 col-md-6 block">
-                   text
-                </div></div>
+                <div class="btn btn_green">
+                    <img class="btn__icon " src="/img/chart-line (1).svg" alt="shopping-bag"><div class="desc desc_green">Ship</div>
+                  </div>
+                  <div class="title page__title">
+                    <p>Complete payment and print your labels</p>
+                  </div>
+                  <div class="subtitle-img">
+                     <img class="img-vector" src="/img/Vector (3).svg" alt="Vector"><p class="subtitle"> Attach the label to the package and we will pick up at your address</p>
+                  </div>
+               </div>
+                </div></div> </div>
            
       </div>
     </div>
     <footer class="footer">
         <div class="container ">
-             <div class="row">
+             <div class="row footer__row">
                 <div class="col-sm-12 col-md-3  block">
                     text
                  </div>
@@ -69,6 +157,6 @@
              </div>
         </div>
     </footer>
-
+</main>
 </body>
 </html>

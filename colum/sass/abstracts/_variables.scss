@@ -5,11 +5,6 @@ $grid-columns: 12 !default;
 $grid-gap:40px !default;
 $grid-gap-side: calc($grid-gap / 2);
 
-$grid-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px,
-) !default;
+
+$color-purple:#593DE4;
+$color-white:  #ffff;

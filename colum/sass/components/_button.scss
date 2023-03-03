@@ -42,3 +42,19 @@ font-size: 18px;
       color:$color-purple;
       background-color:transparent;
   }
+
+  .btn{
+    display: flex;
+border-radius: 3px;
+max-width: 100px;
+  padding: 10px;
+  color: #F18200;
+  background-color:  #FFFADE;
+
+}  
+.btn_green{
+    background-color: rgba(165, 235, 183, 0.32);
+}
+.btn_pink{
+  background-color: rgba(255, 124, 124, 0.28);
+}

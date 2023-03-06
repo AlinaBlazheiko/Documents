@@ -17,6 +17,10 @@
         margin-left: $grid-gap-side;
         margin-right: $grid-gap-side;
     }
+    &_revers{
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .col{

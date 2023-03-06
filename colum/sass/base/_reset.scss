@@ -15,7 +15,6 @@ html, body{
 a, a:visited {
     text-decoration: none;
     display: block;
-    color: white;
    }
    body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
@@ -28,3 +27,6 @@ a, a:visited {
   ol, ul {
     list-style: none;
   }
+img{
+  max-width: 100%;
+}

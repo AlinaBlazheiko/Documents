@@ -16,7 +16,6 @@ html, body {
 a, a:visited {
   text-decoration: none;
   display: block;
-  color: white;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -31,6 +30,10 @@ a:hover {
 
 ol, ul {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -50,6 +53,10 @@ ol, ul {
 .row > * {
   margin-left: 20px;
   margin-right: 20px;
+}
+.row_revers {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .col {
@@ -426,6 +433,9 @@ ol, ul {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: url(/img/begraund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero .hero__title {
   font-weight: 700;
@@ -451,12 +461,12 @@ ol, ul {
 }
 
 .main {
-  background: url(/img/begraund.jpg);
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header {
+  position: absolute;
   padding-top: 40px;
   padding-bottom: 40px;
   top: 0px;
@@ -470,6 +480,7 @@ ol, ul {
   line-height: 124.5%;
   display: flex;
   justify-content: center;
+  color: #FFFFFF;
 }
 
 .logo_subtitle {
@@ -495,6 +506,7 @@ ol, ul {
 .circle-img {
   border-radius: 50%;
   margin: auto;
+  padding: 20px;
 }
 
 .circle {
@@ -504,6 +516,7 @@ ol, ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .circle_yellow {
@@ -552,11 +565,11 @@ ol, ul {
   line-height: 28px;
 }
 
-.subtitle-img {
+.section__subtitle {
   display: inline-flex;
 }
 
-.img-vector {
+.section__img {
   padding-right: 10px;
 }
 
@@ -578,26 +591,38 @@ ol, ul {
 
 .inputwithPic {
   padding: 12px 20px;
-  display: inline-flex;
-  max-width: 250px;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
   background: #EFEFEF;
   border-radius: 10px;
 }
-.inputwithPic .inputwithPic__text {
+
+.inputwithPic__pic {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.inputwithPic_1 {
+  background-image: url(/img/flight_takeoff_black_24dp.svg);
+}
+
+.inputwithPic_2 {
+  background-image: url(/img/flight_land_black_24dp\ 1\ \(1\).svg);
+}
+
+.inputwithPic_3 {
+  background-image: url(/img/inventory_2_black_24dp\ 1\ \(1\).svg);
+}
+
+.inputwithPic_4 {
+  background-image: url(/img/event_black_24dp\ 1\ \(1\).svg);
+}
+
+.inputwithPic__text {
   border: none;
-  max-width: 200px;
   outline: none;
   background: #EFEFEF;
-}
-.inputwithPic .inputwithPic__pic {
-  border: none;
-}
-.inputwithPic .pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer {
@@ -614,29 +639,61 @@ ol, ul {
   font-size: 13px;
   line-height: 124.5%;
   color: #FFFFFF;
+  font-family: "Poppins";
+  margin-top: 40px;
 }
 
 .footer__logo {
   justify-content: flex-start;
 }
 
+.menu__link_lead {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 124.5%;
+  font-family: "Poppins";
+  color: #FFFFFF;
+}
+
+.menu__link {
+  color: #8D8D8D;
+}
+
+.menu__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124.5%;
+  margin-top: 20px;
+  color: #8D8D8D;
+}
+
 .media {
   display: flex;
-  justify-content: center;
   gap: 30px;
 }
 
-.media_link {
+.media__link {
   width: 40px;
   height: 40px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   background: #FFFFFF;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 100%;
 }
 
 .menu {
   display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+
+.app-save {
+  margin-top: 20px;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.app__img {
+  width: 100px;
 }/*# sourceMappingURL=style.css.map */

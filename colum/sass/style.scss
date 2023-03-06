@@ -8,6 +8,11 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+     background: url(/img/begraund.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+    
   .hero__title{
     @include  font-description( 700,50px,61px);
    color: #FFFFFF; 
@@ -25,12 +30,13 @@ margin: 30px 0;
 }
 }
 .main{
-  background: url(/img/begraund.jpg);
+ 
      background-size: cover ;
-     height: 100vh;
+     min-height: 100vh;
     
 }
 .header{
+    position: absolute;
       padding-top: $grid-gap;
       padding-bottom: $grid-gap;
       top: 0px; 
@@ -41,7 +47,8 @@ margin: 30px 0;
 @include  font-description( 900,28px,124.5%);
     display: flex;
     justify-content: center;
-}
+    color: 
+    #FFFFFF;}
 .logo_subtitle{
     @include  font-description( 700,12px,124.5%);
 }
@@ -60,6 +67,7 @@ margin: 30px 0;
 .circle-img{
     border-radius: 50%;
     margin: auto;
+    padding: 20px;
 }
 .circle {
 @include circle(430px);
@@ -99,10 +107,10 @@ padding-left: 10px;
   @include  font-description( 400,18px,28px);
   
 }
-.subtitle-img{
+.section__subtitle{
   display:inline-flex;
 }
-.img-vector{
+.section__img{
     padding-right:10px ;
 }
 .card{
@@ -120,28 +128,36 @@ color: $color-purple;
 
 .inputwithPic{
     padding: 12px 20px ;
-    display: inline-flex;
-    max-width: 250px;
-    justify-content: space-between;
+   display: flex;
     align-items: center;
-   
+  
     background: #EFEFEF;
-    border-radius: 10px;
+    border-radius: 10px;}
+.inputwithPic__pic{
+   width: 24px;
+   height: 24px;
+    
+    background-repeat: no-repeat;
+}
+.inputwithPic_1{
+    background-image: url(/img/flight_takeoff_black_24dp.svg)  ;
+}
+.inputwithPic_2{
+    background-image: url(/img/flight_land_black_24dp\ 1\ \(1\).svg);
+}
+.inputwithPic_3{
+    background-image: url(/img/inventory_2_black_24dp\ 1\ \(1\).svg);
+}
+.inputwithPic_4{
+    background-image: url(/img/event_black_24dp\ 1\ \(1\).svg);
+}
 .inputwithPic__text{
     border: none;
-    max-width: 200px;
     outline: none;
     background: #EFEFEF;
 }
-.inputwithPic__pic{
-    border: none;
-}
-.pic{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-}
+
+
 .footer{
     background-color: #101010;
 
@@ -149,29 +165,60 @@ color: $color-purple;
 .footer__row{
 padding-top: 160px ;
 padding-bottom: 315px;
+
 }
 .text{
     @include  font-description( 400,13px,124.5%);
     color: #FFFFFF;
+    font-family: 'Poppins';
+    margin-top: 40px;
 }
 .footer__logo{
     justify-content: flex-start;
 }
+.menu__link_lead {
+    @include  font-description( 700,20px,124.5%);
+    font-family: 'Poppins';
+    color: #FFFFFF;
+}
+.menu__link{
+    color: #8D8D8D;
+}
+
+.menu__item{
+    @include  font-description( 400,16px,124.5%);
+    margin-top: 20px;
+    color: #8D8D8D;
+}
+
+
+
+
+
 .media{
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
-.media_link{
+.media__link{
     width: 40px;
     height: 40px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     background: #FFFFFF;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+   
     border-radius: 100%;
  }
 .menu{
     display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+.app-save{
+    margin-top: 20px;
+    display: inline-flex;
+    gap: 10px;
+}
+.app__img{
+    width: 100px;
 }

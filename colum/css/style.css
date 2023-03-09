@@ -478,9 +478,13 @@ img {
   font-weight: 900;
   font-size: 28px;
   line-height: 124.5%;
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   color: #FFFFFF;
+}
+
+.logo span {
+  display: block;
 }
 
 .logo_subtitle {
@@ -535,6 +539,7 @@ img {
   font-weight: 900;
   font-size: 62px;
   line-height: 75px;
+  margin-top: 100px;
   text-align: center;
   padding-bottom: 150px;
 }
@@ -589,40 +594,30 @@ img {
   margin-top: 30px;
 }
 
-.inputwithPic {
-  padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  background: #EFEFEF;
+.input {
+  margin-top: 10px;
+  padding: 12px 20px 12px 30px;
+  width: 100%;
+  background-color: #EFEFEF;
   border-radius: 10px;
-}
-
-.inputwithPic__pic {
-  width: 24px;
-  height: 24px;
-  background-repeat: no-repeat;
-}
-
-.inputwithPic_1 {
+  border: none;
+  outline: none;
   background-image: url(/img/flight_takeoff_black_24dp.svg);
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
 }
 
-.inputwithPic_2 {
+.input_arrival {
   background-image: url(/img/flight_land_black_24dp\ 1\ \(1\).svg);
 }
 
-.inputwithPic_3 {
+.input_inventory {
   background-image: url(/img/inventory_2_black_24dp\ 1\ \(1\).svg);
 }
 
-.inputwithPic_4 {
+.input_event {
   background-image: url(/img/event_black_24dp\ 1\ \(1\).svg);
-}
-
-.inputwithPic__text {
-  border: none;
-  outline: none;
-  background: #EFEFEF;
 }
 
 .footer {
@@ -643,10 +638,6 @@ img {
   margin-top: 40px;
 }
 
-.footer__logo {
-  justify-content: flex-start;
-}
-
 .menu__link_lead {
   font-weight: 700;
   font-size: 20px;
@@ -664,7 +655,6 @@ img {
   font-size: 16px;
   line-height: 124.5%;
   margin-top: 20px;
-  color: #8D8D8D;
 }
 
 .media {

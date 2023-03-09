@@ -45,10 +45,15 @@ margin: 30px 0;
 }
 .logo{
 @include  font-description( 900,28px,124.5%);
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     color: 
-    #FFFFFF;}
+    #FFFFFF;
+  
+}  
+.logo span {
+display: block
+   }
 .logo_subtitle{
     @include  font-description( 700,12px,124.5%);
 }
@@ -83,9 +88,11 @@ background: linear-gradient(133.84deg, #F483A3 12.26%, #C670FE 88.97%);
 }
 .caption{
  @include  font-description( 900,62px,75px);
+margin-top: 100px;
 text-align: center;
 padding-bottom: 150px;
   .caption__oposit{
+ 
     background-color:$color-purple;
     color: #FFFFFF;
     padding: 10px;
@@ -125,37 +132,30 @@ color: $color-purple;
 .card__row{
     margin-top: 30px;
 }
-
-.inputwithPic{
-    padding: 12px 20px ;
-   display: flex;
-    align-items: center;
-  
-    background: #EFEFEF;
-    border-radius: 10px;}
-.inputwithPic__pic{
-   width: 24px;
-   height: 24px;
-    
-    background-repeat: no-repeat;
-}
-.inputwithPic_1{
-    background-image: url(/img/flight_takeoff_black_24dp.svg)  ;
-}
-.inputwithPic_2{
-    background-image: url(/img/flight_land_black_24dp\ 1\ \(1\).svg);
-}
-.inputwithPic_3{
-    background-image: url(/img/inventory_2_black_24dp\ 1\ \(1\).svg);
-}
-.inputwithPic_4{
-    background-image: url(/img/event_black_24dp\ 1\ \(1\).svg);
-}
-.inputwithPic__text{
+.input{
+    margin-top: 10px;
+     padding: 12px 20px 12px 30px;
+     width: 100%;
+     background-color: #EFEFEF;
+    border-radius: 10px;
     border: none;
     outline: none;
-    background: #EFEFEF;
+    background-image: url(/img/flight_takeoff_black_24dp.svg)  ;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
 }
+
+.input_arrival{
+    background-image: url(/img/flight_land_black_24dp\ 1\ \(1\).svg);
+}
+.input_inventory{
+    background-image: url(/img/inventory_2_black_24dp\ 1\ \(1\).svg);
+}
+.input_event{
+    background-image: url(/img/event_black_24dp\ 1\ \(1\).svg);
+}
+
 
 
 .footer{
@@ -173,9 +173,7 @@ padding-bottom: 315px;
     font-family: 'Poppins';
     margin-top: 40px;
 }
-.footer__logo{
-    justify-content: flex-start;
-}
+
 .menu__link_lead {
     @include  font-description( 700,20px,124.5%);
     font-family: 'Poppins';
@@ -188,7 +186,7 @@ padding-bottom: 315px;
 .menu__item{
     @include  font-description( 400,16px,124.5%);
     margin-top: 20px;
-    color: #8D8D8D;
+ 
 }
 
 .media{

@@ -46,16 +46,19 @@ margin: 30px 0;
 .logo{
 @include  font-description( 900,28px,124.5%);
     display: block;
-    text-align: center;
+
     color: 
     #FFFFFF;
   
 }  
 .logo span {
-display: block
+display: block;
+text-align: center;
+
    }
 .logo_subtitle{
     @include  font-description( 700,12px,124.5%);
+    
 }
 
 .row__revers{
@@ -134,14 +137,14 @@ color: $color-purple;
 }
 .input{
     margin-top: 10px;
-     padding: 12px 20px 12px 30px;
+     padding: 12px 20px 12px 40px;
      width: 100%;
      background-color: #EFEFEF;
     border-radius: 10px;
     border: none;
     outline: none;
     background-image: url(/img/flight_takeoff_black_24dp.svg)  ;
-    background-position: 0 50%;
+    background-position: 10px 50%;
     background-repeat: no-repeat;
     background-size: 24px 24px;
 }
@@ -193,6 +196,31 @@ padding-bottom: 315px;
     display: flex;
     gap: 30px;
 }
+@media screen and (min-width: 576px) {
+    .hero__title   {
+      
+       margin-bottom: 50px;
+    }
+    .media{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .app  .app-save  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+   
+}
+
 .media__link{
     width: 40px;
     height: 40px;
